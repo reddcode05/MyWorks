@@ -77,7 +77,9 @@ To input your grades in one subject. Such as quizzes OR activities, performance 
             double finalRes = result + result1 + result2;
             System.out.printf("The your Final result: %.2f / 100\n",finalRes);
             //Selection
-            if (finalRes >= 97.50) {
+            if (finalRes < 0 || finalRes > 100) {
+                System.out.println("The Grade is NOT valid");
+            } else if (finalRes >= 97.50) {
                 System.out.println(" GPA: 1.00 (Excellent)");
             } else if (finalRes >= 94.50) {
                 System.out.println(" GPA: 1.25 (Very Good)");
@@ -138,7 +140,9 @@ To input all your grades for one quarter.
             double result = num2 / subjects;
             System.out.printf(" Result: %.2f%%%n", result);
             //Selection
-            if (result >= 97.50) {
+            if (finalRes < 0 || finalRes > 100) {
+                System.out.println("The Grade is NOT valid");
+            } else if (result >= 97.50) {
                 System.out.println(" GPA: 1.00 (Excellent)");
             } else if (result >= 94.50) {
                 System.out.println(" GPA: 1.25 (Very Good)");
@@ -186,7 +190,9 @@ To input your 4 quarters to know if you passed this sem.
             double $final = sc.nextDouble();
             double result = (prelim * .20) + (midTerm * .20) + (pre_Final * .20) + ($final * .40);
             System.out.printf("Your Final score: %.2f", result);
-            if (result >= 97.50) {
+            if (finalRes < 0 || finalRes > 100) {
+                System.out.println("The Grade is NOT valid");
+            } else if (result >= 97.50) {
                 System.out.println(" GPA: 1.00 (Excellent)");
             } else if (result >= 94.50) {
                 System.out.println(" GPA: 1.25 (Very Good)");

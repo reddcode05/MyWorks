@@ -13,6 +13,8 @@ Happy Coding!❤️
 ## First:  
 To input your grades in one subject. Such as quizzes OR activities, performance tasks, and exams.
 ```Java
+import java.util.Scanner;
+public class Main {
     public static void main(String[] args) {
         try (Scanner in = new Scanner(System.in)) {
             System.out.print("What is your subject: ");
@@ -107,11 +109,14 @@ To input your grades in one subject. Such as quizzes OR activities, performance 
             System.err.println("Try again!");
         }
     }
+}
 ```
 ---
 ## Second: 
 To input all your grades for one quarter.
 ```Java
+import java.util.Scanner;
+public class Main {
     public static void main(String[] args) {
         try {
             Scanner input = new Scanner(System.in);
@@ -170,11 +175,14 @@ To input all your grades for one quarter.
             System.err.println("Again...");
         }
     }
+}
 ```
 ---
 ## Third: 
 To input your 4 quarters to know if you passed this sem.
 ```Java
+import java.util.Scanner;
+public class Main {
     public static void main(String[] args) {
         // Grading_System part 2 for prelim to final grade
         try {
@@ -219,4 +227,5 @@ To input your 4 quarters to know if you passed this sem.
             System.err.println("Again...");
         }
     }
+}
 ```

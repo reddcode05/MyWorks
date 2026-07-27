@@ -1,11 +1,18 @@
-# MyGradingSystem-in-Java
-This grading system in java HAHA
+# My Grading System using Java☕
 
-I have three different grading system that I create.
+This is a grading system in Java☕ for Students🧑‍🎓 who want to learn about their grades. 
 
-First:
-import java.util.Scanner;
-public class Grading_System1 {
+I have three different grading systems that I created.
+`
+Happy Coding!❤️
+`
+
+
+---
+
+## First:  
+To input your grades in one subject. Such as quizzes OR activities, performance tasks, and exams.
+```Java
     public static void main(String[] args) {
         try (Scanner in = new Scanner(System.in)) {
             System.out.print("What is your subject: ");
@@ -98,13 +105,11 @@ public class Grading_System1 {
             System.err.println("Try again!");
         }
     }
-}
-
-
-Second:
-
-import java.util.Scanner;
-public class Grading_System {
+```
+---
+## Second: 
+To input all your grades for one quarter.
+```Java
     public static void main(String[] args) {
         try {
             Scanner input = new Scanner(System.in);
@@ -161,13 +166,11 @@ public class Grading_System {
             System.err.println("Again...");
         }
     }
-}
-
-Third:
-
-import java.util.Scanner;
-
-public class Grading_System2 {
+```
+---
+## Third: 
+To input your 4 quarters to know if you passed this sem.
+```Java
     public static void main(String[] args) {
         // Grading_System part 2 for prelim to final grade
         try {
@@ -210,4 +213,4 @@ public class Grading_System2 {
             System.err.println("Again...");
         }
     }
-}
+```

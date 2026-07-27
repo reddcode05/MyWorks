@@ -7,7 +7,6 @@ I have three different grading systems that I created.
 Happy Coding!❤️
 `
 
-
 ---
 
 ## First:  
@@ -111,7 +110,9 @@ public class Main {
     }
 }
 ```
+
 ---
+
 ## Second: 
 To input all your grades for one quarter.
 ```Java
@@ -177,7 +178,9 @@ public class Main {
     }
 }
 ```
+
 ---
+
 ## Third: 
 To input your 4 quarters to know if you passed this sem.
 ```Java
@@ -228,4 +231,11 @@ public class Main {
         }
     }
 }
+```
+
+## Fun Coding:
+This for AA!
+
+```Java
+
 ```

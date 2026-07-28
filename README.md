@@ -1,10 +1,2 @@
-## Java Works 
-This repository is for my work in my school and practice using Java☕
-
-```Java
-public class Main {
-    public static void main(String[] args) {
-        System.out.println("Hello, World!");
-    }
-}
-```
+<h1 align="center">🫠 My Work</h1>
+<p align="center">This repository is for my activities at my school and practice only☕</p>

@@ -3,4 +3,4 @@
 
 ### 📋 UPDATE!
 - "07/28/26"
-     1.  I created two directory names, GradingSystems and My Work.
+     1.  I created two directories, GradingSystems and My Work.

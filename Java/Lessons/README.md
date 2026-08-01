@@ -3,4 +3,5 @@ These are lessons about Java.
 
 ### 📚 Lesson!
   - **OOP**
-    -     
+    - MethodyReturn
+    - People Inside of The Building

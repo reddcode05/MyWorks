@@ -1,6 +1,6 @@
 package practive2;
 
-public class Limit {
+public class PeopleReader {
 
     private static int count = 0;
     private static final String access1 = "IN";

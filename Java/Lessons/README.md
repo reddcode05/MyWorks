@@ -1,7 +1,9 @@
 <h1 align="center">Lessons</h1>
-This are lessons about Java and creating problems using what I learned in Java
+About Java
 
-### 📚 Lessons and Me!
+### 📚 Lessons
   - **OOP**
     - MethodyReturn
     - People Inside of The Building
+### ARRAY LIST
+### Java Challenge

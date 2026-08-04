@@ -91,25 +91,25 @@ public class GradingSystem2 {
             if (finalRes < 0 || finalRes > 100) {
                 System.out.println("Invalid!");
             } else if (finalRes >= 97.50) {
-                System.out.println(" GPA: 1.00 (Excellent)");
+                System.out.println(" GWA: 1.00 (Excellent)");
             } else if (finalRes >= 94.50) {
-                System.out.println(" GPA: 1.25 (Very Good)");
+                System.out.println(" GWA: 1.25 (Very Good)");
             } else if (finalRes >= 91.50) {
-                System.out.println(" GPA: 1.50 (Very Good)");
+                System.out.println(" GWA: 1.50 (Very Good)");
             } else if (finalRes >= 86.50) {
-                System.out.println(" GPA: 1.75 (Very Good)");
+                System.out.println(" GWA: 1.75 (Very Good)");
             } else if (finalRes >= 81.50) {
-                System.out.println(" GPA: 2.00 (Satisfactory)");
+                System.out.println(" GWA: 2.00 (Satisfactory)");
             } else if (finalRes >= 76.00) {
-                System.out.println(" GPA: 2.25 (Satisfactory)");
+                System.out.println(" GWA: 2.25 (Satisfactory)");
             } else if (finalRes >= 70.50) {
-                System.out.println(" GPA: 2.50 (Satisfactory)");
+                System.out.println(" GWA: 2.50 (Satisfactory)");
             } else if (finalRes >= 65.00) {
-                System.out.println(" GPA: 2.75 (Fair");
+                System.out.println(" GWA: 2.75 (Fair");
             } else if (finalRes >= 59.50) {
-                System.out.println(" GPA: 3.00 (Fair)");
+                System.out.println(" GWA: 3.00 (Fair)");
             } else {
-                System.out.println(" GPA: 5.00 (Failed)");
+                System.out.println(" GWA: 5.00 (Failed)");
             }
 
             System.out.println("====================================================");

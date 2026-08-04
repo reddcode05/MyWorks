@@ -1,8 +1,8 @@
 class PersonIdentity {
 
-    String name, city, religion, history, familyName;
-    int age, yr;
-    double ft;
+    private String name, city, religion, history, familyName;
+    private int age, yr;
+    private double ft;
 
     PersonIdentity(String name, String city, String religion, String history, String familyName, int age, double ft, int yr) {
         this.name = name;

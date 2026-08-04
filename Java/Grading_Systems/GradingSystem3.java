@@ -31,25 +31,25 @@ public class GradingSystem3 {
             if (result < 0 || result > 100) {
                 System.out.println("  Invalid!");
             } else if (result >= 97.50) {
-                System.out.println("  GPA: 1.00 (Excellent)");
+                System.out.println("  GWA: 1.00 (Excellent)");
             } else if (result >= 94.50) {
-                System.out.println("  GPA: 1.25 (Very Good)");
+                System.out.println("  GWA: 1.25 (Very Good)");
             } else if (result >= 91.50) {
-                System.out.println("  GPA: 1.50 (Very Good)");
+                System.out.println("  GWA: 1.50 (Very Good)");
             } else if (result >= 86.50) {
-                System.out.println("  GPA: 1.75 (Very Good)");
+                System.out.println("  GWA: 1.75 (Very Good)");
             } else if (result >= 81.50) {
-                System.out.println("  GPA: 2.00 (Satisfactory)");
+                System.out.println("  GWA: 2.00 (Satisfactory)");
             } else if (result >= 76.00) {
-                System.out.println("  GPA: 2.25 (Satisfactory)");
+                System.out.println("  GWA: 2.25 (Satisfactory)");
             } else if (result >= 70.50) {
-                System.out.println("  GPA: 2.50 (Satisfactory)");
+                System.out.println("  GWA: 2.50 (Satisfactory)");
             } else if (result >= 65.00) {
-                System.out.println("  GPA: 2.75 (Fair");
+                System.out.println("  GWA: 2.75 (Fair");
             } else if (result >= 59.50) {
-                System.out.println("  GPA: 3.00 (Fair)");
+                System.out.println("  GWA: 3.00 (Fair)");
             } else {
-                System.out.println("  GPA: 5.00 (Failed)");
+                System.out.println("  GWA: 5.00 (Failed)");
             }
 
             //Update 07/28/26 STI grade; it must be 1.00 to 1.50.

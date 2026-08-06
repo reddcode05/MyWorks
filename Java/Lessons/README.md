@@ -1,9 +1,30 @@
 <h1 align="center">Lessons</h1>
 About Java
 
-### 📚 Lessons
+#### 📚 Lessons
   - **OOP**
+    - Abstraction
+    - Arrays of Objects
+    - Classes & Objects
+    - Contructors
+    - Encapsulators
+    - Enums
+    - Inheritance
+    - Interface
     - MethodyReturn
-    - People Inside of The Building
-### ARRAY LIST
-### Java Challenge
+    - ObjectMethods
+    - Overloading
+    - Polymorhphism
+
+
+#### 🗳️ ARRAY LIST
+  - Main.java
+
+
+#### 😠 Java Challenge
+
+  - **People Counting**
+    - People.java
+    - PeopleReader.java
+  - Identity.java
+  - StudentSystemEnter.java

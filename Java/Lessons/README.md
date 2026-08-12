@@ -1,6 +1,24 @@
 <h1 align="center">Lessons</h1>
 About Java
 
+
+
+#### 🗳️ ARRAY LIST
+  - Main.java
+
+
+
+#### 😠 Java Challenge
+  - **People Counting**
+    - People.java
+    - PeopleReader.java
+  - Identity.java
+  - LibrarySystem.java
+  - SchoolSystem.java
+  - StudentSystemEnter.java
+
+
+
 #### 📚 Lessons
   - **OOP**
     - Abstraction
@@ -17,14 +35,5 @@ About Java
     - Polymorhphism
 
 
-#### 🗳️ ARRAY LIST
-  - Main.java
 
-
-#### 😠 Java Challenge
-
-  - **People Counting**
-    - People.java
-    - PeopleReader.java
-  - Identity.java
-  - StudentSystemEnter.java
+- HashMap.java

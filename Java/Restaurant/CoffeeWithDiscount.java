@@ -13,7 +13,7 @@ public class CoffeeWithDiscount {
         double white = 50.25;
 
         double[] cof = {black, mix, white};
-        double percent = 90; // if 10 percent we are loss so 10 minus 100 equal 90
+        double percent = 90; // if I use 10 percent, we are losing the money, so I use 10 minus 100 equals 90
         double total = 0.0;
 
         int[] buyer = {2, 5, 3};

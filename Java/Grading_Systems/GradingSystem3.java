@@ -63,6 +63,7 @@ public class GradingSystem3 {
 
             System.out.println("====================================================");
             System.out.println("End of the Program!");
+            sc.close();
         } catch (Exception e) {
             System.err.println("Again...");
         }

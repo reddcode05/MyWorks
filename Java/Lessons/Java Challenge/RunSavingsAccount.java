@@ -71,9 +71,10 @@ public class RunSavingsAccount {
             System.out.print("Enter withdraw amount: ");
             savings.withdraw(sc.nextDouble());
         }
-        
-        savings.addInterest();
-
+        if (savings.getBalance() > 1000) {
+            savings.addInterest();
+        }
         SavingsAccount.showBalance(savings);
+        sc.close();
     }
 }

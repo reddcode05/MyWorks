@@ -3,9 +3,9 @@ About Java
 
 
 
-#### 🗳️ ARRAY LIST
-  - Main.java
-
+#### 🗳️ DYNAMICARRAY
+  - ArrayList.java
+  - Hashmap.java
 
 
 #### 😠 Java Challenge
@@ -33,7 +33,3 @@ About Java
     - ObjectMethods
     - Overloading
     - Polymorhphism
-
-
-
-- HashMap.java

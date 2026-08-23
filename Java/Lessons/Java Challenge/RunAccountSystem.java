@@ -246,7 +246,9 @@ class CreateAccSystem {
             isGood = false;
         }
     }
+
     public static void fourthChoice() {
+        System.out.println("===================================================");
         System.out.println("The Purpose of This System is to create system \nthat can add the account and login then, the \naccount has balance that can change using deposit \nand withdraw. ");
     }
 }
@@ -255,38 +257,42 @@ public class Main {
 
     public static void main(String[] args) {
         // Create with Logic Account and can diposit a balance and withdraw
-        Scanner sc = new Scanner(System.in);
-        int choice = 0;
-        while (choice != 5) {
-            System.out.println("===================================================");
-            System.out.println("              Click a number to choice             ");
-            System.out.println("1. Create Account                                  ");
-            System.out.println("2. Display all Accounts                            ");
-            System.out.println("3. Login Account                                   ");
-            System.out.println("4. Menu");
-            System.out.println("5. Exit");
+        try {
+            Scanner sc = new Scanner(System.in);
+            int choice = 0;
+            while (choice != 5) {
+                System.out.println("===================================================");
+                System.out.println("              Click a number to choice             ");
+                System.out.println("1. Create Account                                  ");
+                System.out.println("2. Display all Accounts                            ");
+                System.out.println("3. Login Account                                   ");
+                System.out.println("4. Menu");
+                System.out.println("5. Exit");
 
-            System.out.print("Input you choices: ");
-            choice = sc.nextInt();
-            sc.nextLine();
+                System.out.print("Input you choice: ");
+                choice = sc.nextInt();
+                sc.nextLine();
 
-            if (choice == 1) {
-                // Create Account
-                CreateAccSystem.firstChoice();
-            } else if (choice == 2) {
-                // display All acounts
-                CreateAccSystem.secondChoice();
-            } else if (choice == 3) {
-                // Login account to deposit and withdraw a balance
-                CreateAccSystem.ThirdChoice();
-            } else if (choice == 4) {
-                // Menu
-                CreateAccSystem.fourthChoice();
-            } else if (choice == 5) {
-                // exit
-            } else {
-                System.out.println("Input Error Plz Try Again...");
+                if (choice == 1) {
+                    // Create Account
+                    CreateAccSystem.firstChoice();
+                } else if (choice == 2) {
+                    // display All acounts
+                    CreateAccSystem.secondChoice();
+                } else if (choice == 3) {
+                    // Login account to deposit and withdraw a balance
+                    CreateAccSystem.ThirdChoice();
+                } else if (choice == 4) {
+                    // Menu
+                    CreateAccSystem.fourthChoice();
+                } else if (choice == 5) {
+                    // exit
+                } else {
+                    System.out.println("Input Error Plz Try Again...");
+                }
             }
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
         }
     }
 }

@@ -44,7 +44,7 @@ class Node {
     }
 }
 
-public class LinkedListDemo {
+public class SinglyLinkedListDemo {
 
     public static void main(String[] args) {
         Node head = new Node("Song A");

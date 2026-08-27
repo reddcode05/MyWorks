@@ -4,72 +4,6 @@ import java.awt.Color;
 import javax.swing.JFrame;
 import javax.swing.ImageIcon;
 
-import javax.swing.JLabel;
-import java.awt.Font;
-import javax.swing.BorderFactory;
-import javax.swing.border.Border;
-
-import javax.swing.JPanel;
-
-class Panels {
-    static void display() {
-        
-        JPanel redPanel = new JPanel();
-        redPanel.setBackground(Color.red);
-        redPanel.setBounds(0, 0, 250, 250);
-
-        JPanel bluePanel = new JPanel();
-        redPanel.setBackground(Color.blue);
-        redPanel.setBounds(250, 0, 250, 250);
-
-        JPanel greenPanel = new JPanel();
-        redPanel.setBackground(Color.green);
-        redPanel.setBounds(0, 250, 500, 250);
-
-        JFrame frame = new JFrame();
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setLayout(null);
-        frame.setSize(750, 750);
-        frame.setVisible(true);
-        frame.add(redPanel);
-        frame.add(bluePanel);
-        frame.add(greenPanel);
-    }
-}
-
-class Label {
-
-    static JLabel label = new JLabel(); // create a Label
-    static JFrame frame = new JFrame();
-    static ImageIcon image = new ImageIcon("C:\\Users\\Mai\\OneDrive\\Documents\\NetBeansProjects\\Practive\\src\\MainPackages\\logo.png");
-    static Border border = BorderFactory.createLineBorder(Color.red, 2); // create border
-
-    static void display() {
-
-        label.setText("YOUR GAY?");// set text of label
-        label.setIcon(image);
-        label.setHorizontalTextPosition(JLabel.CENTER); // set a text LEFT, CENTER, RIGHT of imageicon
-        label.setVerticalTextPosition(JLabel.TOP); // set tet TOP, CENTER, BOTTOM of immage icon
-        label.setForeground(Color.red); // set the color text
-        label.setFont(new Font("MV Boli", Font.PLAIN, 20)); // change the text font
-        label.setIconTextGap(0); // set a gap between logo and text
-        label.setBackground(Color.black);
-        label.setOpaque(true); // to set a display background color
-        label.setBorder(border);
-        label.setVerticalAlignment(JLabel.CENTER); // set vertical text and image
-        label.setHorizontalAlignment(JLabel.CENTER); // set horizontal text and image
-        // label.setBounds(100, 100, 250, 250); // set x and y position within the size of height and width and show the image in a frame both text and image
-
-        frame.setIconImage(image.getImage());
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        //frame.setSize(500, 500);
-        // frame.setLayout(null);// set the image to hide
-        frame.setVisible(true);
-        frame.add(label);
-        frame.pack();
-    }
-}
-
 class Frame {
 
     static JFrame frame = new JFrame(); // create frame
@@ -89,7 +23,8 @@ class Frame {
 }
 
 public class MyWindow {
+
     public static void main(String[] args) {
-        Panels.display();
+        Frame.display();
     }
 }

@@ -39,7 +39,7 @@ class MyFirstFrame {
         frame1.add(label);
         frame1.setVisible(true);
 
-        // create two frame with gap
+        // AI: 
         int gap = 20;
 
         int totalWidth = frame1.getWidth() + frame2.getWidth() + gap;

@@ -1,4 +1,4 @@
-package MainPackages;
+package mainpackages;
 
 import java.util.Scanner;
 import java.util.ArrayList;
@@ -7,7 +7,7 @@ import java.util.regex.Pattern;
 
 class Account {
 
-    public static String nickName;
+    private String nickName;
     private String userName;
     private String passWord;
     private double balance = 0;
@@ -15,14 +15,11 @@ class Account {
     final public static double percent = .10;
     public static int count;
 
-    public Account(String userName, String passWord) {
+    public Account(String userName, String passWord, String nickName) {
         this.userName = userName;
         this.passWord = passWord;
+        this.nickName = nickName;
         count++;
-    }
-
-    public static void setNickName(String name) {
-        nickName = name;
     }
 
     public String getUserName() {
@@ -118,9 +115,20 @@ class AccountSystem {
             System.out.printf("Account #\t: \t%03d\n", i);
             System.out.println("NickName\t: \t" + account.getNickName());
             System.out.println("Balance \t: \t" + account.getBalance());
-            i++;
             System.out.println("");
+            i++;
         }
+    }
+
+    public boolean SameUserNameNickName(String name) {
+        for (Account account : accounts) {
+            if (name.equals(account.getUserName())) {
+                return true;
+            } else if (name.equals(account.getNickName())) {
+                return true;
+            }
+        }
+        return false;
     }
 
 }
@@ -133,10 +141,12 @@ class CreateAccSystem {
     public static void firstChoice() {
         System.out.println("===================================================");
         System.out.println("Create Your Account: ");
+
         boolean isGood = true;
         String userName = "";
         String nickName = "";
         String passWord = "";
+
         while (isGood != false) {
             boolean isGood1 = true;
             while (isGood1 != false) {
@@ -144,7 +154,10 @@ class CreateAccSystem {
                 userName = sc.next();
                 Pattern p = Pattern.compile(".*{1,10}@student.ph");
                 Matcher m = p.matcher(userName);
-                if (m.matches()) {
+                
+                if (as.SameUserNameNickName(userName)) {
+                    System.out.println("The NickName is Already has...");
+                } else if (m.matches()) {
                     isGood1 = false;
                     System.out.println("The UserName is Complete.");
                 } else {
@@ -158,6 +171,9 @@ class CreateAccSystem {
                 passWord = sc.next();
                 Pattern p = Pattern.compile(".{8}");
                 Matcher m = p.matcher(passWord);
+
+                as.SameUserNameNickName(userName);
+
                 if (m.matches()) {
                     isGood2 = false;
                     System.out.println("The PassWord is Complete.");
@@ -173,7 +189,11 @@ class CreateAccSystem {
                 nickName = sc.next();
                 Pattern p = Pattern.compile(".*{1,10}");
                 Matcher m = p.matcher(nickName);
-                if (m.matches()) {
+                
+                
+                if ( as.SameUserNameNickName(nickName)) {
+                    System.out.println("The NickName is already use...");
+                } else if (m.matches()) {
                     isGood4 = false;
                     System.out.println("The NickName is Complete.");
                 } else {
@@ -181,8 +201,7 @@ class CreateAccSystem {
                 }
             }
         }
-        as.addAcc(new Account(userName, passWord));
-        Account.setNickName(nickName);
+        as.addAcc(new Account(userName, passWord, nickName));
     }
 
     public static void secondChoice() {
@@ -249,7 +268,8 @@ class CreateAccSystem {
 
     public static void fourthChoice() {
         System.out.println("===================================================");
-        System.out.println("The Purpose of This System is to create system \nthat can add the account and login then, the \naccount has balance that can change using deposit \nand withdraw. ");
+        System.out.println("The Purpose of This System is a bank account\nthat can add the account and login then, the \naccount has balance that can change using deposit \nand withdraw. ");
+        System.out.println("I use the only encapsulation with the static.");
     }
 }
 
@@ -266,7 +286,7 @@ public class Main {
                 System.out.println("1. Create Account                                  ");
                 System.out.println("2. Display all Accounts                            ");
                 System.out.println("3. Login Account                                   ");
-                System.out.println("4. Menu");
+                System.out.println("4. Explain the System");
                 System.out.println("5. Exit");
 
                 System.out.print("Input you choice: ");

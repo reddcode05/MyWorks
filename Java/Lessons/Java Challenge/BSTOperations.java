@@ -1,0 +1,129 @@
+package mainpackage;
+
+class BSTNode {
+
+    int key;
+    BSTNode left, right;
+
+    BSTNode(int key) {
+        this.key = key;
+    }
+}
+
+class BST {
+
+    BSTNode root;
+
+    //Insert Method
+    public void insert(int key) {
+        root = insertRec(root, key);
+    }
+
+    private BSTNode insertRec(BSTNode n, int k) {
+        if (n == null) {
+            return new BSTNode(k);
+        }
+        if (k < n.key) {
+            n.left = insertRec(n.left, k);
+        } else if (k > n.key) {
+            n.right = insertRec(n.right, k);
+        }
+        return n;
+    }
+
+    //Search Method
+    public boolean search(BSTNode n, int k) {
+        if (n == null) {
+            return false;
+        }
+        if (n.key == k) {
+            return true;
+        }
+        if (k < n.key) {
+            return search(n.left, k);
+        } else {
+            return search(n.right, k);
+        }
+    }
+
+    //Delete Method
+    public void deleteKey(int key) {
+        root = deleteRec(root, key);
+    }
+
+    private BSTNode deleteRec(BSTNode n, int k) {
+        if (n == null) {
+            return null;
+        }
+        if (k < n.key) {
+            n.left = deleteRec(n.left, k);
+        } else if (k > n.key) {
+            n.right = deleteRec(n.right, k);
+        } else {
+            if (n.left == null) {
+                return n.right;
+            }
+            if (n.right == null) {
+                return n.left;
+            }
+            n.key = minValue(n.right);
+            n.right = deleteRec(n.right, n.key);
+
+        }
+        return n;
+    }
+
+    // Find minimun value Method
+    private int minValue(BSTNode n) {
+        while (n.left != null) {
+            n = n.left;
+        }
+        return n.key;
+    }
+
+    //Inorder Traversal
+    void inorderPrint() {
+        inorder(root);
+        System.out.println();
+    }
+
+    private void inorder(BSTNode n) {
+        if (n != null) {
+            inorder(n.left);
+            System.out.print(n.key + " ");
+            inorder(n.right);
+        }
+    }
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+        BST t = new BST();
+        int[] vals = {50, 30, 70, 20, 40, 60, 80};
+        for (int v : vals) {
+            t.insert(v);
+        }
+        System.out.print("Inorder after insertion: ");
+        t.inorderPrint();
+        if (t.search(t.root, 40)) {
+            System.out.println("Search 40: Found");
+        } else {
+            System.out.println("Search 40: Not Found");
+        }
+        if (t.search(t.root, 100)) {
+            System.out.println("Search 100: Found");
+        } else {
+            System.out.println("Search 100: Not Found");
+        }
+        t.deleteKey(20);
+        System.out.print("After deleting 20: ");
+        t.inorderPrint();
+        t.deleteKey(30);
+        System.out.print("After deleting 30: ");
+        t.inorderPrint();
+        t.deleteKey(50);
+        System.out.print("After deleting 50: ");
+        t.inorderPrint();
+    }
+}

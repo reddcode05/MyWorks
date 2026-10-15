@@ -1,0 +1,108 @@
+body {
+  padding: 20px 30px;
+}
+/* navigation */
+.header {
+  background-color: rgb(78, 13, 1);
+  padding: 7px 25px;
+  box-shadow: 0 0 10px 3px rgb(63, 0, 0);
+  border-radius: 10px;
+}
+.title {
+  display: inline-block;
+}
+.logoLink {
+  text-decoration: none;
+}
+.titleLogo {
+  display: inline-block;
+  margin: 0;
+  color: white;
+  font-family: verdana;
+  position: relative;
+  top: -10px;
+  left: 5px;
+  transition: ease-in-out 0.3s;
+  border: 1px solid white;
+  box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.274);
+}
+.titleLogo:hover {
+  color: rgb(255, 0, 0);
+  box-shadow: 0 0 10px 3px rgb(110, 1, 1);
+  border: 1px solid rgb(156, 0, 0);
+}
+
+.links {
+  float: right;
+  position: relative;
+  top: 12px;
+  left: -15px;
+  background-color: rgb(44, 0, 0);
+  height: 35px;
+  box-shadow: 0 0 20px 5px rgb(61, 1, 1);
+}
+.link {
+  text-decoration: none;
+  color: white;
+  font-family: verdana;
+  font-size: 20px;
+  margin: 0 15px;
+  transition: 0.3s;
+}
+.link:hover {
+  color: gray;
+}
+/* topic */
+.main {
+  background-color: rgb(78, 18, 1);
+  border-radius: 10px;
+  padding: 7px 25px;
+  margin: 20px 0;
+  color: white;
+  font-family: verdana;
+  box-shadow: 0 0 10px 3px rgb(63, 0, 0);
+}
+/* introduce */
+.introduce {
+  margin-top: 20px;
+  background-color: rgb(61, 1, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 3px rgb(44, 0, 0);
+}
+/* name and describe */
+.name_describe {
+  margin-right:100px;
+}
+.name {
+  font-size: 30px;
+}
+.describe {
+  color: rgb(197, 195, 195);
+  font-size: 18px;
+}
+/* my image */
+.imageBox {
+  margin: 0 50px;
+}
+.myPicture {
+  border-radius: 50%;
+}
+.prac {
+  color: rgb(255, 255, 255);
+}
+
+/* footer */
+footer {
+  background-color: rgb(46, 45, 45);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px 3px rgb(46, 45, 45);
+}
